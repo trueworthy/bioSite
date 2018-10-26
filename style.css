@@ -44,9 +44,22 @@ header {
 	padding-left: 2px;
 	margin-right: 5%;
 }
+section {
+	height: 960px;
+	padding-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#photos {
+}
+#space {
+	height: auto;
+}
 
 h1 {
 	font-family: 'Anton', sans-serif;
+	text-align: center;
+	font-size: 40px;
 }
 
 h2 {
@@ -61,39 +74,22 @@ h2 {
 }
 
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-}
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-}
-
-.column img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+	width: 25%;
+	padding: 10px;
+	float: left;
+	clear: right;
 }
 .row {
-	margin-right: auto;
-	margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    color: #6C2888;
+    font-family: 'Open Sans', sans-serif;
 }
-/* The expanding image container */
-.box {
-    position: relative;
-    display: none;
-}
-.container {
+#intro {
 	text-align: center;
 	font-size: 50px;
+	background-image: url(images/back_three.png);
+	background-size: cover;
 }
 
 /* Expanding image text */
@@ -104,25 +100,22 @@ h2 {
     color: white;
     font-size: 20px;
 }
-
-/* Closable button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+#about {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
 }
-.hello h2  {
-	text-transform:uppercase;
-	font-weight:550;
-	font-size:24px;
+h2   {
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 30px;
+    text-align: center;
 }
-.hello p  {
+p   {
     margin-top: 20px;
     margin-bottom: 80px;
     font-family: 'Open Sans', sans-serif;
+    text-align: left;
 } 
 
 footer {
@@ -137,8 +130,17 @@ footer img {
 	padding-bottom: 2px;
 	padding-left: 2px;
 }
-.hello {
-	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+#contact {
+	background-image: url(images/back_three.png);
+	background-size: cover;
 }
