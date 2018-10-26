@@ -54,6 +54,11 @@ section {
 }
 #photos {
 }
+
+#intro img {
+	margin: auto;
+	
+}
 #space {
 	height: auto;
 }
@@ -147,4 +152,7 @@ footer img {
 #contact {
 	background-image: url(images/back_three.png);
 	background-size: cover;
+}
+.antispam {
+    display: none;
 }
