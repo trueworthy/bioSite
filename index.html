@@ -117,17 +117,17 @@
 <section id="contact">
 	
 		<h1>Contact</h1>
-	
+
 	<form method="post" action="submit.php"><!-- This is the start the contact information spam free form/PHP -->
 	
 		<a>Your name:
-		<br /><textarea name="name" /></a>
+		<br/><input name="name" /></a><br>
 		
 		<a>Your email:
-		<br /><textarea name="email" /></a>
+		<br /><input name="email" /></a><br>
 		
 		<a class="antispam" style="display: none">Leave this empty:
-		<br /><textarea name="url" /></a>
+		<br /><input name="url" /></a>
 		
 		<a>Your message:
 		<br /><textarea name="message" rows="10" cols="100"></textarea></a>
@@ -136,15 +136,16 @@
 		
 	</form><!-- This is the End of contact information spam free form/PHP -->
 	
- 
-	<p>My e-mail address:
+	
+	<a>My e-mail address:
 	<script type="text/javascript">
 		document.write('<a href="mailto:'+first + '@' + last+'">lea_trueworthy@mail.tmcc.edu<\/a>');
 	</script>
 	<noscript>
 	Please enable javascript or use the contact form.
 	</noscript>
-	</p>
+	</a>
+					</div>
 	
 </section>
 
