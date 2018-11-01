@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index</title>
+<title>My EYE on you</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,400,600,700,800" rel="stylesheet">
 
@@ -54,7 +54,7 @@
 </section>
 <hr>
 	
-<section id="photos" data-natural-width="1800px">
+<section id="photos" data-natural-width="">
 	
 		<h1>Photos</h1>
 			
@@ -64,6 +64,11 @@
 	<img src="images/image_4.jpg" alt="" style="width:30%" >
 	<img src="images/image_5.jpg" alt="" style="width:20%" >
 	<img src="images/image_6.jpg" alt="" style="width:20%" >
+	<img src="images/college.jpg" alt="" style="width:30%" >
+	<img src="images/one_of_many.jpg" alt="" style="width:30%" >
+	<img src="images/with_brother.jpg" alt="" style="width:30%" >
+	<img src="images/young.jpg" alt="" style="width:30%" >
+	<img src="images/star.jpg" alt="" style="width:30%" >
 	
 	<!--<div class="row">
 				<div class="column">
@@ -83,8 +88,9 @@
   				</div>
 				<div class="column">
     		<img src="images/image_5.jpg" alt="" style="width:100%" >
- 				</div>
-		</div>-->
+ 				</div>-->
+		
+	
 	
 </section>
 	
@@ -99,10 +105,11 @@
 					<p>
 						Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia.aliquid, dolor provident accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum! Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia. A accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum? 
 					Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia.</p>
+	<img src="images/Firefly-Ship-Schematics-Exclusive.jpg" alt="serenity" style="width: 80%">
 	
 		<h2 style="font-weight: bold">“Do. Or do not. There is no try.” — Yoda</h2>
 			
-		<img src="images/Firefly-Ship-Schematics-Exclusive.jpg" alt="serenity" style="width: 40%">
+		
 	
 </section>
 	<hr>
@@ -110,27 +117,23 @@
 <section id="contact">
 	
 		<h1>Contact</h1>
+	<div class="container">
+  		<form action="submit.php">
+    <a for="fname">First Name</a>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <a for="lname">Email</a>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+   
+    <a for="subject">Message</a>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
 	
-				<div class="row">
-							<div class="8u 12u$(small)">
-								<form method="post" action="submit.php"><!-- This is the start the contact information spam free form/PHP -->
-	
-		<p>Your name:
-		<br /><input name="name"  /></p>
-		
-		<p>Your email:
-		<br /><input name="email" /></p>
-		
-		<p class="antispam">Leave this empty:
-		<br /><input name="url" /></p>
-		
-		<p>Your message:
-		<br /><textarea name="message" rows="5" cols="100" class="w3-input w3-border"></textarea></p>
-		
-		<p><input type="submit" value="Send" /></p>
-		
-	</form><!-- This is the End of contact information spam free form/PHP -->
-	
+				
 	
 	<p>
 	<script type="text/javascript">

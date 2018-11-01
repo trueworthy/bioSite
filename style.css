@@ -47,7 +47,7 @@ header {
 	margin-right: 5%;
 }
 section {
-	height: 960px;
+	height: auto;
 	padding-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
@@ -91,6 +91,9 @@ h2 {
     margin-left: auto;
     color: #6C2888;
     font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    text-align: left;
+    display: table;
 }
 #intro {
     text-align: center;
@@ -100,6 +103,31 @@ h2 {
     margin-right: auto;
     margin-left: auto;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #6C2888;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #8F35B4;
+}
+
 
 /* Expanding image text */
 #imgtext {
@@ -127,6 +155,10 @@ p   {
     text-align: left;
 } 
 
+a {
+	font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
 footer {
     width: 100%;
     height: 50px;
@@ -150,9 +182,17 @@ footer img {
     cursor: pointer;
 }
 #contact {
-	background-image: url(images/back_three.png);
-	background-size: cover;
+    background-image: url(images/back_three.png);
+    background-size: cover;
 }
 .antispam {
     display: none;
+}
+form {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #6C2888;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
