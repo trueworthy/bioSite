@@ -118,29 +118,26 @@
 	
 		<h1>Contact</h1>
 	
+	<form method="post" action="submit.php"><!-- This is the start the contact information spam free form/PHP -->
 	
-	<div class="container">
-  			<form method="post" action="submit.php">
-    	<a for="fname">First Name</a>
-    	<input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    	<a for="lname">Email</a>
-    	<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<a>Your name:
+		<br /><textarea name="name" /></a>
 		
-			<a class="antispam" style="display: none">Leave this empty:
-		<br /><input name="url" /></a>
-
-   
-    <a for="subject">Message</a>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-		<a><input type="submit" value="Submit"></a>
-  </form>
-</div>
+		<a>Your email:
+		<br /><textarea name="email" /></a>
+		
+		<a class="antispam" style="display: none">Leave this empty:
+		<br /><textarea name="url" /></a>
+		
+		<a>Your message:
+		<br /><textarea name="message" rows="10" cols="100"></textarea></a>
+		
+		<a><input type="submit" value="Send" /></a>
+		
+	</form><!-- This is the End of contact information spam free form/PHP -->
 	
-				
-	
-	<p>
+ 
+	<p>My e-mail address:
 	<script type="text/javascript">
 		document.write('<a href="mailto:'+first + '@' + last+'">lea_trueworthy@mail.tmcc.edu<\/a>');
 	</script>
@@ -148,8 +145,6 @@
 	Please enable javascript or use the contact form.
 	</noscript>
 	</p>
-    </div> 
-							</div>
 	
 </section>
 
