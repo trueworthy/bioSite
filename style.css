@@ -46,6 +46,25 @@ header {
 	padding-left: 2px;
 	margin-right: 5%;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #6C2888;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 section {
 	height: auto;
 	padding-top: 10px;
@@ -53,6 +72,8 @@ section {
 	margin-left: auto;
 }
 #photos {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #intro img {
@@ -162,6 +183,7 @@ a {
 footer {
     width: 100%;
     height: 50px;
+    padding: 0px;
     background-color: #333;
 }
 footer img {
@@ -177,6 +199,7 @@ footer img {
 #contact {
     background-image: url(images/back_three.png);
     background-size: cover;
+    background-repeat: repeat-x;
 }
 .antispam {
     display: none;
@@ -188,4 +211,6 @@ form {
     color: #6C2888;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+}
+.bl-content form {
 }

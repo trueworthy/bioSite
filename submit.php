@@ -16,7 +16,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	
 	Message: $_POST[message]
 	
-	Signed ~An Eye for an Eye makes the whole world blind";
+	Signed ~Cookies are the true monster";
 
 	// Use the submitters email if they supplied one
 	// (and it isn't trying to hack your form).
@@ -28,7 +28,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	}
 
 	// finally, send the message
-	mail($youremail, 'Jake!', $body, $headers );
+	mail($youremail, 'Cookie Monster!', $body, $headers );
 
 }
 
@@ -39,14 +39,14 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 <html>
 <head>
 
-<title>Thank you for the message!</title>
+<title>Thank you reply message!</title>
 
 </head>
-<body>
+<body background="images/bedtime.png" style="background-position: center center">
 
 <h1>Thank you for contacting us</h1>
 <p>We'll get back to you as soon as possible, have a wonderful day.</p>
-	<a href="index.html">Return home</a>
+	<a href="page.html">Return home</a>
 	
 	</body>
 </html>
