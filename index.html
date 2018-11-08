@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>My EYE on you</title>
 <link href="style.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anto Open+Sans:300,400,600,700,800" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <script src="jquery.min.js"></script>
 
@@ -120,22 +120,23 @@
 		<h1>Contact</h1>
 
 <div class="bl-content">
-						<form method="post" action="submit.php"><!-- This is the start the contact information spam free form/PHP -->
+						<form action="submit.php" method="post"><!-- This is the start the contact information spam free form/PHP -->
 	
-		<a>Your name:
-		<br /><input name="name" /></a>
+		<a>Your name:</a>
+		<br /><input name="name" />
 		
 		<br>
-<a>Your email:
-		<br /><input name="email" /></a>
+							<a>Your email:</a>
+	<br /><input name="email" />
+							
 		
 		<p class="antispam" style="display: none">Leave this empty:
 		<br /><input name="url" /></p>
+		<br>
+		<a>Your message:</a>
+		<br /><textarea name="message" rows="10" cols="100"></textarea>
 		
-		<p>Your message:
-		<br /><textarea name="message" rows="10" cols="100"></textarea></p>
-		
-		<p ><input type="submit" value="Send" /></p>
+		<p><input type="submit" value="Send" /></p>
 		
 	</form><!-- This is the End of contact information spam free form/PHP -->
 	
