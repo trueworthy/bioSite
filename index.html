@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>My EYE on you</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Anto Open+Sans:300,400,600,700,800" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <script src="jquery.min.js"></script>
@@ -32,8 +33,8 @@
 		
 <section id="intro">
 	
-	<h1>Jake Haselton</h1>
-  		<img src="images/jake_img.jpg" alt="jake" style="padding-top: 50px">
+	<h1>  <div data-aos="fade-in">Jake Haselton</div></h1>
+			<img src="images/jake_img.jpg" alt="jake" style="padding-top: 50px">
 
 	
 </section>
@@ -41,14 +42,15 @@
 <hr>
 		
 <section id="about">
-	<h1>About</h1>
+	<div data-aos="fade-down"><h1>About</h1></div>
   		<h2>“You can't take the sky from me.” ― Joss Whedon</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quod voluptate consequuntur ad quasi, mizzen
-					dolores obcaecati ex aliquid, dolor provident accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum! 
-					Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia.</p>
-					<p>Click<a href="https://www.youtube.com/watch?v=60JcUpO_IR8" target="_blank"><img src="images/Serenity_small.png" alt="ship"></a>
+					<p style="text-indent: 40px">Jacob A Haselton was born in Denver, Colorado. He is the youngest child out of five, three boys and two girls. Jacob moved around frequently but called Fallon, Nevada his home. At the age of 5, Jacob lost one of his gorgeous eyes to a screwdriver being thrown at him. Due to this event, he now can not see out of his right eye. Fortunately, he still has a normal life, but he always knows what he is going to be for halloween, a pirate. While in high school, you would find Jake with his 5 best friends messing around. They got into lots of trouble pulling pranks, flipping cars, riding bikes, and causing mischief.  During his wild child years, Jacob started working on motorcycles. This gave him a passion and drive for motorcycles and mechanics. </p>
+	
+					<p style="text-indent: 40px">After graduating Churchill County High School in 2013, Jacob moved to Reno, Nevada to attend the University of Nevada, Reno also known as UNR.  When he’s not tinkering with his many motorcycles, he is studying to become a Mechanical Engineer. In the pursuit of a higher education, Jacob met his fabulous girlfriend, Lea (which so happens to be me) on a chilly March night. They have been together for almost 4 years and live happily with their 8 pets, 4 cats and 4 reptiles. Jacob hopes to graduate with his Mechanical Engineering degree. Later in life, he hopes to open a custom motorcycle shop where he can design and build unique, one of a kind motorcycles. </p>
+	
+					<p style="margin: auto">Click<a href="https://www.youtube.com/watch?v=60JcUpO_IR8" target="_blank"><img src="images/Serenity_small.png" alt="ship"></a>
   if you want to see a trailer for Jake's Favorite show, <strong>Firefly</strong> </p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quod voluptate consequuntur ad quasi, mizzen dolores obcaecati ex aliquid, dolor provident accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum! </p>
+	
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>
 			
 </section>
@@ -56,7 +58,7 @@
 	
 <section id="photos">
 	
-		<h1>Photos</h1>
+	<div data-aos="fade-down"><h1>Photos</h1></div>
 			
 	<img src="images/image_2.jpg" alt="" style="width:30%" >
 	<img src="images/image_3.jpg" alt="" style="width:30%" >
@@ -70,27 +72,6 @@
 	<img src="images/with_brother.jpg" alt="" style="width:30%" >
 	<img src="images/star.jpg" alt="" style="width:30%" >
 	
-	<!--<div class="row">
-				<div class="column">
-    		<img src="images/image_2.jpg" alt="" style="width:100%" >
-  				</div>
-  				<div class="column">
-    		<img src="images/image_1.jpg" alt="" style="width:100%" >
-  				</div>
-  				<div class="column">
-   			 <img src="images/image_4.jpg" alt="" style="width:100%" >
-  				</div>
-				<div class="column">
-    		<img src="images/image_6.jpg" alt="" style="width:100%" >
-  				</div>
-				<div class="column">
-   			<img src="images/image_7.jpg" alt="" style="width:100%">
-  				</div>
-				<div class="column">
-    		<img src="images/image_5.jpg" alt="" style="width:100%" >
- 				</div>-->
-		
-	
 	
 </section>
 	
@@ -98,7 +79,7 @@
 	
 <section id="space">
 	
-		<h1>Build a Spaceship</h1>
+	<div data-aos="fade-down"><h1>Build a Spaceship</h1></div>
 		
 
   <h2>“I find your lack of faith disturbing.” — Darth Vader</h2>
@@ -117,11 +98,10 @@
 	
 <section id="contact">
 	
-		<h1>Contact</h1>
+	<div data-aos="fade-down"><h1>Contact</h1></div>
 
 <div class="bl-content">
-	
-	<h2>Contact Us</h2>
+
 <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
 <input name="skip_WhereToSend" type="hidden" value="ltrueworthy@gmail.com" />
 <input name="skip_SnapHostID" type="hidden" value="N83WJZT2HGPD" />
@@ -261,6 +241,10 @@ $(document).ready(function(){
 });
 </script>
 
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 	
 </body>
 </html>
