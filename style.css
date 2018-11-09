@@ -214,3 +214,7 @@ form {
 }
 .bl-content form {
 }
+#space img {
+    margin-right: auto;
+    margin-left: auto;
+}
