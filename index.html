@@ -7,7 +7,6 @@
 	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link href="https://fonts.googleapis.com/css?family=Anto Open+Sans:300,400,600,700,800" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<script src="jquery.smoothscroll.js"></script>
 <script src="jquery.min.js"></script>
 
 </head>
@@ -35,7 +34,7 @@
 <section id="intro">
 	
 	<h1>  <div data-aos="fade-in">Jake Haselton</div></h1>
-			<img src="images/jake_img.jpg" alt="jake" style="padding-top: 50px">
+			<img src="images/jake_img.jpg" alt="jake" style="padding-top: 20px">
 
 	
 </section>
@@ -59,21 +58,137 @@
 	
 <section id="photos">
 	
-	<div data-aos="fade-down"><h1>Photos</h1></div>
-			
-	<img src="images/image_2.jpg" alt="" style="width:30%" >
-	<img src="images/image_3.jpg" alt="" style="width:30%" >
-	<img src="images/image_1.jpg" alt="" style="width:30%" >
-	<img src="images/image_4.jpg" alt="" style="width:30%" >
-	<img src="images/image_5.jpg" alt="" style="width:20%" >
-	<img src="images/image_6.jpg" alt="" style="width:20%" >
-	<img src="images/college.jpg" alt="" style="width:30%" >
-	<img src="images/young.jpg" alt="" style="width:30%" >
-	<img src="images/one_of_many.jpg" alt="" style="width:30%" >
-	<img src="images/with_brother.jpg" alt="" style="width:30%" >
-	<img src="images/star.jpg" alt="" style="width:30%" >
+<div data-aos="fade-down"><h1>Photos</h1></div>
 	
+<div class="row">
+ 
+<div class="column">
+    <img src="images/image_4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+</div>
+
+<div class="column">
+    <img src="images/image_7.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/college.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/image_5.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/image_6.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/image_2.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/dog_love.JPG" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/nice_n_dirty.JPG" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/on_a_ride.JPG" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+</div>
+	<div class="column">
+    <img src="images/young.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/one_of_many.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/silly_face.jpeg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+</div>
+<div class="column">
+    <img src="images/star.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+ </div>
+<div class="column">
+    <img src="images/with_brother.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+ </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+	  
+	   <div class="mySlides">
+      <div class="numbertext">1 / 14</div>
+      <img src="images/image_2.jpg" style="width:80%">
+    </div>
+	  
+	   <div class="mySlides">
+      <div class="numbertext">2 / 14</div>
+      <img src="images/image_4.jpg" style="width:80%">
+    </div>
+	  
+	   <div class="mySlides">
+      <div class="numbertext">3 / 14</div>
+      <img src="images/image_5.jpg" style="width:80%">
+    </div>
+	  
+	   <div class="mySlides">
+      <div class="numbertext">4 / 14</div>
+      <img src="images/image_6.jpg" style="width:80%">
+    </div>
+	  
+ <div class="mySlides">
+      <div class="numbertext">5 / 14</div>
+      <img src="images/image_7.jpg" style="width:80%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 14</div>
+      <img src="images/college.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 14</div>
+      <img src="images/dog_love.JPG" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 14</div>
+      <img src="images/nice_n_dirty.JPG" style="width:80%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">9 / 14</div>
+      <img src="images/on_a_ride.JPG" style="width:80%">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">10 / 14</div>
+      <img src="images/one_of_many.jpg" style="width:80%">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">11 / 14</div>
+      <img src="images/silly_face.jpeg" style="width:80%">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">13 / 14</div>
+      <img src="images/star.jpg" style="width:80%">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">12 / 14</div>
+      <img src="images/with_brother.jpg" style="width:80%">
+    </div>
+	  
+	  <div class="mySlides">
+      <div class="numbertext">14 / 14</div>
+      <img src="images/young.jpg" style="width:80%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
 	
+	</div>
+	</div>
 </section>
 	
 	<hr>
@@ -83,15 +198,22 @@
 	<div data-aos="fade-down"><h1>Build a Spaceship</h1></div>
 		
 
-  <h2>“I find your lack of faith disturbing.” — Darth Vader</h2>
-					<p>
-						Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia.aliquid, dolor provident accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum! Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia. A accusamus omnis dolorum ipsam. Voluptatem ipsum expedita, corporis facilis laborum asperiores nostrum? 
-					Amet porro numquam ratione temporibus quia dolorem sint lorem voluptates quasi mollitia.</p>
-	<img src="images/origami-space-instructions.jpg" alt="serenity" style="width: 50%">
-	<img src="images/Firefly-Ship-Schematics-Exclusive.jpg" alt="serenity" style="width: 70%">
+	<h2 style="font-weight: bold">“Do. Or do not. There is no try.” — Yoda</h2>
+	<p style="font-size: 20px"> Below are some examples of the kind of spaceships you can build.</p>
 	
-		<h2 style="font-weight: bold">“Do. Or do not. There is no try.” — Yoda</h2>
-			
+	<img src="images/origami-space-instructions.jpg" alt="serenity" style="width:30%"><br>
+	
+	 <p style="font-size: 20px">Click the icon to find many more spaceship designs!</p>
+	
+<text>Fold n Go</text> <a href="https://www.foldnfly.com/#/1-1-1-1-1-1-1-1-2"><i class="fas fa-paper-plane"></i></a>
+	
+	<br>
+<text>Art of Manliness</text> <a href="https://www.artofmanliness.com/articles/how-to-make-the-worlds-best-paper-airplanes/"><i class="fas fa-paper-plane"></i></a><br><br>
+	
+	<img src="images/Firefly-Ship-Schematics-Exclusive.jpg" alt="serenity" style="width: 60%"><br>
+	
+	
+			 <h2 style="float: ">“I find your lack of faith disturbing.” — Darth Vader</h2>
 		
 	
 </section>
@@ -161,28 +283,9 @@ src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=N83WJZT2HGPD&ImgType=
 </td></tr>
 </table><br />
 </form>
-						<!--<form action="submit.php" method="post"><!-- This is the start the contact information spam free form/PHP 
-	
-		<a>Your name:</a>
-		<br /><input name="name" />
-		
-		<br>
-							<a>Your email:</a>
-	<br /><input name="email" />
-							
-		
-		<p class="antispam" style="display: none">Leave this empty:
-		<br /><input name="url" /></p>
-		<br>
-		<a>Your message:</a>
-		<br /><textarea name="message" rows="10" cols="100"></textarea>
-		
-		<p><input type="submit" value="Send" /></p>
-		
-	</form>This is the End of contact information spam free form/PHP -->
 	
 	
-	<p>My e-mail address:
+	<p style="display: none">My e-mail address:
 	<script type="text/javascript">
 		document.write('<a href="mailto:'+first + '@' + last+'">lea_trueworthy@mail.tmcc.edu<\/a>');
 	</script>
@@ -214,6 +317,45 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+</script>
+	
+	<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 	
