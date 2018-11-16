@@ -40,11 +40,12 @@ header {
   color: black;
 }
 .navbar img {
-	padding-top: 2px;
-	padding-right: 2px;
-	padding-bottom: 2px;
-	padding-left: 2px;
-	margin-right: 5%;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    margin-right: 5%;
+    margin-bottom: 2px;
 }
 #myBtn {
   display: none;
