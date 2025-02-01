@@ -18,7 +18,6 @@ body {
     padding: 0;
     position: relative;
     min-height: 100vh;
-    /* Ensures the background covers the entire viewport */
 }
 
 .background {
@@ -33,12 +32,11 @@ body {
 
 header {
     background-color: white;
-    /* padding: 15px 0; */
     border-bottom: 2px solid #ccc;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -78,7 +76,6 @@ h1 {
     color: #556B2F;
     font-size: 2em;
     font-family: "Oswald";
-
 }
 
 .HomeSec {
@@ -96,13 +93,13 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.HomeCard h2, .left-side h2 {
+.HomeCard h2, .AboutCard h2 {
     font-size: 1.2em;
     color: #033F63;
     font-family: "Sentient";
 }
 
-.HomeCard p {
+.HomeCard p, .AboutCard p {
     font-size: 1em;
     color: #606C38;
     font-family: "Oswald-Light";
@@ -144,30 +141,22 @@ footer ul li a {
 }
 
 .AboutSec {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .AboutCard {
-    /* position: relative;
+    width: 45%;
     display: flex;
-    align-items: flex-start; */
-    justify-content: space-between;
-    margin-top: 20px;
-    width: 80%;
-}
-
-.left-side {
-    max-width: 50%;
-}
-
-.left-side p {
-    margin-top: 10px;
-    color: #333;
-    font-size: 14px;
+    flex-direction: column;
 }
 
 .right-side {
-    width: 300px;
     height: 250px;
     background-color: #ddd;
 }
