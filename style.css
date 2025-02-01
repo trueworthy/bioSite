@@ -1,3 +1,4 @@
+/* Font Imports */
 @font-face {
     font-family: "Oswald";
     src: url("fonts/Oswald-Regular.ttf") format("truetype");
@@ -13,11 +14,13 @@
     src: url("fonts/Sentient-Regular.ttf") format("truetype");
 }
 
+/* General Styles */
 body {
     margin: 0;
     padding: 0;
     position: relative;
     min-height: 100vh;
+    padding-bottom: 60px;
 }
 
 .background {
@@ -30,6 +33,7 @@ body {
     z-index: -1;
 }
 
+/* Header & Navigation */
 header {
     background-color: white;
     border-bottom: 2px solid #ccc;
@@ -39,12 +43,12 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
     background-color: white;
 }
 
 nav li {
-    float: left;
+    display: inline;
 }
 
 nav li a {
@@ -61,31 +65,33 @@ nav li a:hover:not(.active) {
 }
 
 nav .active {
-    background-color: #033F63;
+    background-color: #033f63;
     color: white;
 }
 
+/* Main */
 main {
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 80px;
     position: relative;
     z-index: 1;
 }
 
 h1 {
-    color: #556B2F;
+    color: #556b2f;
     font-size: 2em;
     font-family: "Oswald";
 }
 
-.HomeSec {
+/* Home */
+.home_sec {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
-.HomeCard {
+.home_card {
     background: white;
     padding: 20px;
     width: 300px;
@@ -93,32 +99,110 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.HomeCard h2, .AboutCard h2 {
+/* Shared Card Styles */
+.home_card h2,
+.about_card h2,
+.hobbies_card h2, 
+.contact_oops h2 {
     font-size: 1.2em;
-    color: #033F63;
+    color: #033f63;
     font-family: "Sentient";
 }
 
-.HomeCard p, .AboutCard p {
+.home_card p,
+.about_card p,
+.hobbies_sec p {
     font-size: 1em;
-    color: #606C38;
+    color: #606c38;
     font-family: "Oswald-Light";
+    text-align: left;
 }
 
-.HomeImage {
+.about_card p,
+.hobbies_sec p {
+    padding: 10px;
+}
+
+/* Images */
+.home_image {
     width: 100%;
     height: 150px;
     background-color: #ddd;
     margin-bottom: 10px;
 }
 
+/* About */
+.about_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about_card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right_side {
+    height: 250px;
+    background-color: #ddd;
+}
+
+/* Hobbies */
+.hobbies_sec, 
+.contact_sec {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.hobbies_card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hobbies_h2 {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hobbies_image {
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+.text_container {
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+.contact_oops p {
+    font-size: 1em;
+    color: #606c38;
+    font-family: "Oswald-Light";
+}
+
+/* Footer */
 footer {
     position: fixed;
-    background-color: #033F63;
-    padding: 15px;
-    text-align: center;
     bottom: 0;
     width: 100%;
+    background-color: #033f63;
+    padding: 15px;
+    text-align: center;
+    z-index: 10;
 }
 
 footer ul {
@@ -138,25 +222,4 @@ footer ul li a {
     font-family: "Oswald-Light";
     color: white;
     text-decoration: none;
-}
-
-.AboutSec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.AboutCard {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.right-side {
-    height: 250px;
-    background-color: #ddd;
 }
