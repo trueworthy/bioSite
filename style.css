@@ -85,6 +85,20 @@ h1 {
 	letter-spacing: .5px;
 }
 
+/* Intro card */
+.welcome_card {
+	background: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+	font-family: "Fira";
+	color: #033f63;
+
+}
+
 /* Home */
 .home_sec {
 	display: flex;
